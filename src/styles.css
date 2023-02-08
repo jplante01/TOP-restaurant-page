@@ -49,6 +49,28 @@ table {
 
 /* End Reset */
 
+:root {
+  --font-color: #723415;
+  --font-color-dark: #aaa;
+  --border-color: #222;
+  --background-light: #743515;
+  --background-dark: rgb(63,32,16,0.9);
+}
+
 body {
-  background-image: url(images/back.jpeg);
+  background-image: url(./back.jpeg);
+}
+
+.red {
+  color: red;
+}
+
+.header {
+  background-color: var(--background-dark);
+}
+
+.banner {
+  font-size: 24px;
+  text-align: center;
+  color: var(--font-color);
 }
