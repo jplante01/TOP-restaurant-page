@@ -15,6 +15,7 @@ function createHeader() {
   function createButton(buttonTitle) {
     const button = document.createElement('button');
     button.classList.add('nav-button');
+    button.id = buttonTitle;
     button.textContent = buttonTitle
     nav.appendChild(button);
   }
