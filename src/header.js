@@ -5,7 +5,7 @@ function createHeader() {
 
   const banner = document.createElement('h1');
   banner.classList.add('banner')
-  banner.textContent = 'Island';
+  banner.textContent = 'Island Grill';
   header.appendChild(banner);
   
 

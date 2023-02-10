@@ -54,23 +54,50 @@ table {
   --font-color-dark: #aaa;
   --border-color: #222;
   --background-light: #743515;
-  --background-dark: rgb(63,32,16,0.9);
+  --background-dark: rgba(0, 0, 0, 0.9);
 }
 
 body {
   background-image: url(./back.jpeg);
 }
 
-.red {
-  color: red;
-}
 
 .header {
   background-color: var(--background-dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .banner {
-  font-size: 24px;
+  margin-top: 20px;
+  font-size: 5rem;
   text-align: center;
+  font-family: 'Kaushan Script', cursive;
   color: var(--font-color);
+}
+
+.nav-button {
+  padding: 2rem;
+  font-size: 2rem;
+  background-color: transparent;
+  color: var(--font-color);
+  border: none;
+}
+
+.home {
+  background-color: var(--background-dark);
+  margin: 50px;
+  color: var(--font-color);
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home img {
+  width: 100px;
+  height: 200px;
 }
