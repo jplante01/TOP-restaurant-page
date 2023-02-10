@@ -8,10 +8,13 @@ function loadHome() {
 
   const tikiImg = new Image();
   tikiImg.src = tiki;
-  
+ 
+  const invite = document.createElement('p');
+  invite.textContent = "Consectetur vitae sit cumque libero expedita Autem aliquam laboriosam vitae alias accusantium eaque tenetur. Pariatur a facere officia dolores perspiciatis! Harum eveniet eligendi doloribus repellat quaerat Optio amet commodi dolore"
+
   home.appendChild(blurb);
   home.appendChild(tikiImg);
-
+  home.appendChild(invite);
   return home;
 }
 

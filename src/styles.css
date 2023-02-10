@@ -53,7 +53,7 @@ table {
   --font-color: #723415;
   --font-color-dark: #aaa;
   --border-color: #222;
-  --background-light: #743515;
+  --background-light: rgba(0,0,0,0.7);
   --background-dark: rgba(0, 0, 0, 0.9);
 }
 
@@ -87,7 +87,8 @@ body {
 }
 
 .home {
-  background-color: var(--background-dark);
+  background-color: var(--background-light);
+  border: 1px solid var(--background-dark);
   margin: 50px;
   color: var(--font-color);
   font-size: 24px;
@@ -95,6 +96,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border-radius: 
 }
 
 .home img {
