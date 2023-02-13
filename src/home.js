@@ -2,7 +2,7 @@ import tiki from './images/tiki.png';
 
 function loadHome() {
   const home = document.createElement('div');
-  home.id = home;
+  home.id = 'home';
   home.classList.add('f-col');
 
   const blurb = document.createElement('p');

@@ -14,31 +14,29 @@ function initializeWebsite() {
 
   const main = document.getElementById('main');
 
-  main.appendChild(loadContact());
+  main.appendChild(loadHome());
 }
+const func = {
+  home: loadHome,
+  menu: loadMenu,
+  contact: loadContact,
+};
 
 function populatePage(target) {
-  const main = document.getElementsById('main');
-  console.log(main.id);
-  if (target.id === main.id) {
-    console.log('match!');
-  }
+  const main = document.getElementById('main');
+  const currentPage = document.querySelector('#main > div').classList[0];
 
-  // main.textContent = "";
-  // main.appendChild();
+  if (target === currentPage) return;
+  main.textContent = '';
+  main.appendChild(func[target]())
+  // main.appendChild((func.target)();
 }
 
 function loadEventListeners() {
-  document.getElementById('Home').addEventListener('click', (e) => {
-    populatePage(e.target);
-  });
+  const btns = document.querySelectorAll('.nav > button');
 
-  document.getElementById('Menu').addEventListener('click', (e) => {
-    populatePage(e.target);
-  });
-
-  document.getElementById('Contact').addEventListener('click', (e) => {
-    populatePage(e.target);
+  btns.forEach((btn) => {
+    btn.addEventListener('click', (e) => populatePage(e.target.dataset.ref));
   });
 }
 

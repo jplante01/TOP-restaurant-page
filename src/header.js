@@ -1,34 +1,29 @@
-
 function createHeader() {
   const header = document.createElement('div');
   header.classList.add('header');
   header.classList.add('f-col');
 
   const banner = document.createElement('h1');
-  banner.classList.add('banner')
+  banner.classList.add('banner');
   banner.textContent = 'Island Grill';
   header.appendChild(banner);
-  
 
   const nav = document.createElement('div');
-  nav.classList.add('nav')
+  nav.classList.add('nav');
 
   function createButton(buttonTitle) {
     const button = document.createElement('button');
     button.classList.add('nav-button');
-    button.id = buttonTitle;
-    button.textContent = buttonTitle
+    button.dataset.ref = buttonTitle.toLowerCase();
+    button.textContent = buttonTitle;
     nav.appendChild(button);
   }
 
   createButton('Home');
   createButton('Menu');
   createButton('Contact');
-  
   header.appendChild(nav);
   return header;
 }
 
-
-export default createHeader
-
+export default createHeader;
