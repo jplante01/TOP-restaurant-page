@@ -2,6 +2,7 @@
 function createHeader() {
   const header = document.createElement('div');
   header.classList.add('header');
+  header.classList.add('f-col');
 
   const banner = document.createElement('h1');
   banner.classList.add('banner')

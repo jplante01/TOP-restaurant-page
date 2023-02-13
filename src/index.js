@@ -1,17 +1,30 @@
 import './styles.css';
 import './back.jpeg';
 import createHeader from './header.js';
+import createMain from './main.js';
 import loadHome from './home.js';
 import loadContact from './contact.js';
 
 function initializeWebsite() {
   const content = document.getElementById('content');
+
   content.appendChild(createHeader());
-  content.appendChild(loadHome());
+  content.appendChild(createMain());
+
+  const main = document.getElementById('main');
+
+  main.appendChild(loadHome());
 }
 
-function populatePage(tab) {
-  console.log(tab);
+function populatePage(target) {
+  const main = document.getElementsById('main');
+ console.log(main.id); 
+  if (target.id === main.id) {
+    console.log('match!')
+  }
+  
+  // main.textContent = "";
+  // main.appendChild();
 }
 
 function loadEventListeners() {
