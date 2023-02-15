@@ -1,3 +1,6 @@
+const json = require('./menu_items.json');
+// const menuItems = JSON.parse(json);
+
 function loadMenu() {
   const menu = document.createElement('div');
   menu.id = 'menu';
@@ -24,7 +27,14 @@ function loadMenu() {
 
     return item;
   }
-  menu.appendChild(generateMenuItem('pizza', 'delicioso', '$19.99'));
+
+  // for (const obj of json) {
+    // menu.appendChild(generateMenuItem(obj.name, obj.description, obj.price));
+  // }
+
+  json.forEach((obj) => {
+    menu.appendChild(generateMenuItem(obj.name, obj.description, obj.price));
+  });
   return menu;
 }
 export default loadMenu;

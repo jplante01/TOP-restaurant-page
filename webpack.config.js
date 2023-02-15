@@ -18,6 +18,12 @@ module.exports = {
         type: 'asset/resource',
       },
     ],
+    loaders: [
+      {
+        test: /\.json$/,
+        loader: 'json-loader',
+      },
+    ],
   },
   devServer: {
     static: './dist',

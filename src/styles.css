@@ -89,6 +89,9 @@ body {
   border: none;
 }
 
+.grid {
+
+}
 .main {
   background-color: var(--background-light);
   border: 1px solid var(--background-dark);
