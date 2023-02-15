@@ -8,7 +8,7 @@ function loadMenu() {
   
   function generateMenuItem(name, description, cost) {
     const item = document.createElement('div');
-    item.classList.add('menu-item');
+    item.classList = 'menu-item f-col';
 
     const itemName = document.createElement('h1');
     itemName.textContent = name;
@@ -28,13 +28,10 @@ function loadMenu() {
     return item;
   }
 
-  // for (const obj of json) {
-    // menu.appendChild(generateMenuItem(obj.name, obj.description, obj.price));
-  // }
-
   json.forEach((obj) => {
     menu.appendChild(generateMenuItem(obj.name, obj.description, obj.price));
   });
+
   return menu;
 }
 export default loadMenu;

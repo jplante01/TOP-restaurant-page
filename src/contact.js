@@ -3,10 +3,10 @@ function loadContact() {
   contact.id = 'contact';
   const blurb = document.createElement('p');
 
-  blurb.textContent = 'Sit totam quaerat dolorum adipisicing modi Autem sit nostrum odit aut perferendis. Rem explicabo doloremque nihil repellat error Error sit fuga assumenda neque harum Facere quo explicabo voluptate aspernatur id?orem';
+  blurb.textContent = 'Call us at 1-372-4733 for orders and reservations';
 
   const invite = document.createElement('p');
-  invite.textContent = 'Consectetur vitae sit cumque libero expedita Autem aliquam laboriosam vitae alias accusantium eaque tenetur. Pariatur a facere officia dolores perspiciatis! Harum eveniet eligendi doloribus repellat quaerat Optio amet commodi dolore';
+  invite.textContent = 'Located at 123 Wisteria Lane Cleveland, Ohio';
 
   contact.appendChild(blurb);
   contact.appendChild(invite);

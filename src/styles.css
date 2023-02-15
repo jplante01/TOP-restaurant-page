@@ -50,7 +50,9 @@ table {
 /* End Reset */
 
 :root {
-  --font-color: #c14b0f;
+  --font-color: #f7b28f;
+  --name-font-color:  #c14b0f;
+  --buttons-font-color: #ee641f;
   --font-color-dark: #aaa;
   --border-color: #222;
   --background-light: rgba(0,0,0,0.7);
@@ -75,23 +77,27 @@ body {
 
 .banner {
   margin-top: 20px;
-  font-size: 5rem;
+  font-size: 6rem;
   text-align: center;
   font-family: 'Kaushan Script', cursive;
-  color: var(--font-color);
+  color: var(--name-font-color);
 }
 
 .nav-button {
   padding: 2rem;
   font-size: 2rem;
   background-color: transparent;
-  color: var(--font-color);
+  color: var(--buttons-font-color);
   border: none;
 }
 
 .grid {
-
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-row-gap: 90px;
+	grid-column-gap: 180px;
 }
+
 .main {
   background-color: var(--background-light);
   border: 1px solid var(--background-dark);
@@ -114,4 +120,16 @@ body {
 #tiki {
   width: 200px;
   height: 300px;
+}
+
+.item-name {
+  font-size: 3rem;
+}
+.item-description {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.item-cost {
+  font-size: 2rem;
 }

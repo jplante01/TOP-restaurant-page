@@ -6,13 +6,13 @@ function loadHome() {
   home.classList.add('f-col');
 
   const blurb = document.createElement('p');
-  blurb.textContent = 'Sit totam quaerat dolorum adipisicing modi Autem sit nostrum odit aut perferendis. Rem explicabo doloremque nihil repellat error Error sit fuga assumenda neque harum Facere quo explicabo voluptate aspernatur id?orem';
+  blurb.textContent = 'Come to Island Grill to enjoy gourmet foods in our cozy, island-inspired dining room. We use nothing but healthy fresh ingredients, because we want our guests to enjoy the finest dishes.';
 
   const tikiImg = new Image();
   tikiImg.src = tiki;
   tikiImg.id = 'tiki';
   const invite = document.createElement('p');
-  invite.textContent = 'Consectetur vitae sit cumque libero expedita Autem aliquam laboriosam vitae alias accusantium eaque tenetur. Pariatur a facere officia dolores perspiciatis! Harum eveniet eligendi doloribus repellat quaerat Optio amet commodi dolore';
+  invite.textContent = 'Call today to reserve a cozy booth, or just come by to be seated at the bar. Delivery and pickup is available... call the number on our contact page!';
 
   home.appendChild(blurb);
   home.appendChild(tikiImg);
