@@ -50,7 +50,7 @@ table {
 /* End Reset */
 
 :root {
-  --font-color: #723415;
+  --font-color: #c14b0f;
   --font-color-dark: #aaa;
   --border-color: #222;
   --background-light: rgba(0,0,0,0.7);
@@ -58,7 +58,8 @@ table {
 }
 
 body {
-  background-image: url(./back.jpeg);
+  background-image: url(./images/back.jpeg);
+  background-position: center top;
 }
 
 .f-col {
@@ -99,9 +100,15 @@ body {
 
 .main > div {
   margin: 50px;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.main > div > p {
+  font-size: 38px;
+  margin: 50px;
 }
 
 #tiki {
-  width: 100px;
-  height: 200px;
+  width: 200px;
+  height: 300px;
 }

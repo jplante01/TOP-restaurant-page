@@ -1,10 +1,10 @@
 import './styles.css';
-import './back.jpeg';
-import createHeader from './header.js';
-import createMain from './main.js';
-import loadHome from './home.js';
-import loadMenu from './menu.js';
-import loadContact from './contact.js';
+import './images/back.jpeg';
+import createHeader from './header';
+import createMain from './main';
+import loadHome from './home';
+import loadMenu from './menu';
+import loadContact from './contact';
 
 function initializeWebsite() {
   const content = document.getElementById('content');
@@ -28,8 +28,7 @@ function populatePage(target) {
 
   if (target === currentPage) return;
   main.textContent = '';
-  main.appendChild(func[target]())
-  // main.appendChild((func.target)();
+  main.appendChild(func[target]());
 }
 
 function loadEventListeners() {
