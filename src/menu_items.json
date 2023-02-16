@@ -1,25 +1,31 @@
 [
-  { "name": "Pasta", 
+  {
+    "name": "Pasta",
     "description": "Hand-made vermicelli noodles in a delicious white wine and garlic sauce.",
     "price": "$24.99"
   },
-  { "name": "Salmon", 
+  {
+    "name": "Salmon",
     "description": "Wild-caught Alaskan king salmon grilled and served over mushroom risotto",
     "price": "$32.99"
   },
-  { "name": "Ratatouille", 
+  {
+    "name": "Ratatouille",
     "description": "Root vegetables, mushrooms, pomodoro, with vegan cheese",
     "price": "$27.99"
   },
-  { "name": "Chicken", 
+  {
+    "name": "Chicken",
     "description": "Pan-roased and served with a white wine sauce and fingerling potatoes",
     "price": "$24.99"
   },
-  { "name": "Pork Chop", 
+  {
+    "name": "Pork Chop",
     "description": "Dry-aged local pork grilled and served with a root vegetable puree",
     "price": "$32.99"
   },
-  { "name": "Catch of the Day", 
+  {
+    "name": "Catch of the Day",
     "description": "Dish changes daily, ask your server",
     "price": "Mkt"
   }

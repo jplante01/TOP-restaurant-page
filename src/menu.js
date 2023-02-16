@@ -5,7 +5,7 @@ function loadMenu() {
   const menu = document.createElement('div');
   menu.id = 'menu';
   menu.classList.add('grid');
-  
+
   function generateMenuItem(name, description, cost) {
     const item = document.createElement('div');
     item.classList = 'menu-item f-col';
