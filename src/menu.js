@@ -1,5 +1,4 @@
 const json = require('./menu_items.json');
-// const menuItems = JSON.parse(json);
 
 function loadMenu() {
   const menu = document.createElement('div');
